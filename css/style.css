@@ -1,11 +1,178 @@
-/* Reset Start */
 
+/* Variables Start */
+:root {
+  --dark-color: #20262E;
+  --white-color: #E9E8E8;
+  --secondary-color: #913175;
+  --ternary-color: #CD5888;
+
+  --bg-color-main: var(--white-color);
+  --bg-color-secondary: var(--secondary-color);
+  --bg-color-ternary: var(--ternary-color);
+
+  --text-color-main: var(--dark-color);
+  --text-color-secondary: var(--secondary-color);
+  --text-color-ternary: var(--ternary-color);
+}
+/* Variables End */
+
+/* Reset Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input {
+  padding: 0.1rem 0.5rem;
+}
+input:focus {
+  outline: 2px solid var(--secondary-color);
+  outline-style: auto;
+}
+
+button {
+  cursor: pointer;
+}
 /* Reset End */
 
-/* For Design Purpose Start */
-.banner img {
-  width: 50px;
-  height: 70px;
-  border: 1px solid black;
+/* General Start */
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  color: var(--text-color-main);
 }
-/* For Design Purpose End */
+
+p {
+  margin-top: 0.5rem;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-color-main);
+}
+
+.main-container {
+  min-height: 100vh;
+}
+/* General End */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+}
+
+.leftbar {
+  flex: none;
+  width: 40%;
+  background-image: url(../img/backgrounds/purple-night-sky.jpg);
+  background-size: cover;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  position: relative;
+  top: 200px;
+
+  background-color: rgba(0, 0, 0, 0.150);
+  padding: 1rem;
+  height: 120px;
+
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner img {
+  height: 100%;
+}
+
+.main {
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main>section:first-child {
+  font-weight: 700;
+}
+
+/* signup-form Start */
+.signup-form {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+
+.signup-form>div {
+  background-color: #fff;
+}
+
+.signup-form section.form--body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 3rem;
+}
+
+.form-control {
+  flex: auto;
+  min-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form .form--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form .form--footer > button {
+  width: 50%;
+  background-color: var(--bg-color-secondary);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.3rem 1.2rem;
+
+  color: white;
+
+  display: block;
+}
+
+.signup-form .form--footer > button:hover {
+  background-color: var(--ternary-color);
+}
+.signup-form .form--footer > button:hover:active {
+  background-color: var(--secondary-color);
+}
+
+/* signup-form End */
