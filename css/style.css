@@ -1,4 +1,3 @@
-
 /* Variables Start */
 :root {
   --dark-color: #20262E;
@@ -14,6 +13,7 @@
   --text-color-secondary: var(--secondary-color);
   --text-color-ternary: var(--ternary-color);
 }
+
 /* Variables End */
 
 /* Reset Start */
@@ -23,7 +23,10 @@
   box-sizing: border-box;
 }
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
   font-family: inherit;
   font-size: 100%;
 }
@@ -31,6 +34,7 @@ input, select, textarea, button {
 input {
   padding: 0.1rem 0.5rem;
 }
+
 input:focus {
   outline: 2px solid var(--secondary-color);
   outline-style: auto;
@@ -39,6 +43,7 @@ input:focus {
 button {
   cursor: pointer;
 }
+
 /* Reset End */
 
 /* General Start */
@@ -60,6 +65,7 @@ body {
 .main-container {
   min-height: 100vh;
 }
+
 /* General End */
 
 .main-container {
@@ -156,7 +162,7 @@ body {
   align-items: center;
 }
 
-.signup-form .form--footer > button {
+.signup-form .form--footer>button {
   width: 50%;
   background-color: var(--bg-color-secondary);
   border: none;
@@ -168,10 +174,11 @@ body {
   display: block;
 }
 
-.signup-form .form--footer > button:hover {
+.signup-form .form--footer>button:hover {
   background-color: var(--ternary-color);
 }
-.signup-form .form--footer > button:hover:active {
+
+.signup-form .form--footer>button:hover:active {
   background-color: var(--secondary-color);
 }
 
