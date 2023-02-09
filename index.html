@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form | Imaginary Service</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
   </head>
 
   <body>
@@ -20,13 +21,11 @@
         </aside>
         <main class="main">
           <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eum officia iusto id sed velit a
-              sapiente, perspiciatis iste mollitia quia, soluta culpa possimus. Temporibus similique nemo beatae
-              provident unde!</p>
-            <p>Lorem Ipsum Dolor!</p>
+            <p></p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! Sign up now to get started.</p>
+            <p>You know you want to.</p>
           </section>
 
-          <form action="" method="post" class="signup-form">
+          <form action="#" method="post" class="signup-form">
             <header class="form--header">
               <h2>Let's do this!</h2>
             </header>
@@ -34,32 +33,35 @@
             <section class="form--body">
               <div class="form-control">
                 <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
+                <input type="text" name="first-name" id="first-name" required  placeholder="John">
               </div>
 
               <div class="form-control">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Doe">
               </div>
 
               <div class="form-control">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required  placeholder="youremail@example.com">
               </div>
 
               <div class="form-control">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" placeholder="0898984147" pattern="[0-9]{8,13}" 
+                  oninvalid="this.setCustomValidity('only number with 8 - 12 character')"
+                  oninput="this.setCustomValidity('')"
+                  >
               </div>
 
               <div class="form-control">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required placeholder="password">
               </div>
 
               <div class="form-control">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password" required placeholder="password">
               </div>
             </section>
             <footer class="form--footer">
