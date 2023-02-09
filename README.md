@@ -12,5 +12,6 @@ project assignment: [The Odin Project - Signup Form](https://www.theodinproject.
 
 ## What Skills I am practicing?
 - HTML Form
+- Validation with HTML5 and Javascript
 - CSS Form Styling
 - Git
